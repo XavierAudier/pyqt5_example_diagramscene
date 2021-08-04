@@ -89,7 +89,7 @@ class MainWindow(QMainWindow):
 
         selectedItems = self.scene.selectedItems()
         for item in selectedItems:
-            if (item.type() == DiagramItem.Type):
+            if (item.Type == DiagramItem.Type):
                 item.removeArrows()
             self.scene.removeItem(item)
             del(item)
