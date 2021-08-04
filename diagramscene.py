@@ -155,7 +155,6 @@ class DiagramScene(QGraphicsScene):
 
     def isItemChange(self, item_type):
         items = self.selectedItems()
-        print('test')
         for item in items:
             if item.Type == item_type:
                 return True
