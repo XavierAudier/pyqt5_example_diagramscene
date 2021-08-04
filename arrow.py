@@ -55,7 +55,6 @@ class Arrow(QGraphicsLineItem):
         if (self.myStartItem.collidesWithItem(self.myEndItem)):
             centerLine = QLineF(self.myEndItem.pos(), self.myStartItem.pos())
             self.setLine(centerLine)
-            print('collide')
         else:
             centerLine = QLineF(self.myStartItem.pos(), self.myEndItem.pos())
             endPolygon = self.myEndItem.polygon()
