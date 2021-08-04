@@ -115,11 +115,6 @@ class DiagramScene(QGraphicsScene):
             textItem.setPos(mouseEvent.scenePos())
             self.textInserted.emit(textItem)
 
-        
-        for item in self.items():
-            print(item.pos())
-            print(mouseEvent.scenePos())
-
         super().mousePressEvent(mouseEvent)
 
 
