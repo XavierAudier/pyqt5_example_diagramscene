@@ -112,8 +112,7 @@ class DiagramScene(QGraphicsScene):
             textItem.selectedChange.connect(self.itemSelected)
             self.addItem(textItem)
             textItem.setDefaultTextColor(self.myTextColor)
-            # textItem.setPos(mouseEvent.scenePos())
-            textItem.setPos(QPointF(100, 100))
+            textItem.setPos(mouseEvent.scenePos())
             self.textInserted.emit(textItem)
 
         
